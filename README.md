@@ -1,4 +1,4 @@
-# React-Task-Tracker
+# React-Task-Manager
 
 A web app that helps keep records and reminders for task to be done!
 
