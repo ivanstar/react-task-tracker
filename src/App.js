@@ -2,7 +2,7 @@ import Header from './components/Header'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 import { useState } from 'react'
-//import React from 'react'
+
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
@@ -27,12 +27,10 @@ function App() {
   //Toggle reminder
   const toggleReminder = (id) => {
     console.log(id)
-    //console.log('swag',tasksList.map( (task) => task.id == id ? task : task ))
-    //console.log(tasksList.map((task) => {...task, reminder: !task.reminder }))
     setTasks(tasksList.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task ))
 
   }
-      /*{tasksList.length > 0 ? (<Tasks tasksList={tasksList} onDelete={deleteTask}/>) : ('No Task') } */
+
 
   return (
     <div className="container">
@@ -42,14 +40,6 @@ function App() {
     </div>
   );
 }
-
-
-//Using class
-// class App extends React.Component{
-//   render(){
-//     return <h1>From a class</h1>
-//   }
-// }
 
 export default App;
 
